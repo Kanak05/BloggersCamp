@@ -1,0 +1,23 @@
+{% extends 'base.html'%} 
+{% block title%} Blog-Home{% endblock title%} 
+{% block css%}
+<style>
+	.container{
+		min-height: 90vh;
+	}
+</style>{% endblock css %}
+{% block blogactive %} active {% endblock blogactive %}
+ {% block body%}
+
+<div class="container py-3 px-5">
+  <h2 class="text-center my-3">{{blog.title}}</h2>
+ <div class="my-3">
+	{{blog.content|safe}}
+ </div>
+ <div class="container  md-3 px-5 py-3"><img src="https://png.pngtree.com/png-vector/20191121/ourmid/pngtree-blue-bird-vector-or-color-illustration-png-image_2013004.jpg">
+ <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGJpdx2Gpj2aiUVwa9ayNiZ7vtaU7w_xsaKw&s">
+ <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqIShJN1xMIAhNr-yMgWX4Td-tSERhT8zEag&s">
+</div>
+</div>
+
+ {% endblock body%}
